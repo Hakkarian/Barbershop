@@ -1,8 +1,5 @@
-import './css/main.scss'
-console.log('this is js')
-
-const wordOpener = () => {
-    const message = "this is opener";
-    return message;
-}
-wordOpener();
+import module from './module1';
+import './index.html'
+import './css/style.scss';
+console.log(module);
+console.log("Hello!");

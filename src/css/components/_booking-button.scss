@@ -1,0 +1,17 @@
+.booking-button {
+    padding: 12px 20px;
+
+    font-family: 'Open Sans';
+    @include font(12px, 600, calc(12 / 16), 0.09em, #000);
+
+    background-color: transparent;
+    border: 1px solid var(--barber-color);
+    border-radius: 25px;
+
+    transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover, &:focus {
+        color: #fff;
+        background-color: var(--barber-color);
+    }
+}

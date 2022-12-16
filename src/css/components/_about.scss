@@ -1,0 +1,39 @@
+.section-about {
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    > .container {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+    }
+}
+
+.section-about__list {
+    display: flex;
+    gap: 30px;
+}
+.section-about__wrap {
+
+}
+.section-about__list-item {}
+
+.section-about__item-img {}
+
+.section-about__about-p {
+    margin-bottom: 20px
+}
+
+.section-about__h2 {
+    margin-bottom: 20px;
+}
+
+.section-about__p {
+    @include font(18px, 400, calc(30 / 18), 0.05em, var(--p-color));
+    margin-bottom: 20px
+}
+
+.section-about__text {
+    @include font(14px, 400, calc(26 / 14), 0.02em, var(--p-color));
+    margin-bottom: 40px;
+}

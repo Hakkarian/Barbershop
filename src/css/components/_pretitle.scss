@@ -1,0 +1,7 @@
+.pretitle {
+    @include font(11px, 600, calc(15 / 11), 0.1em, var(--pricing-color));
+    text-transform: uppercase;
+}
+.title {
+    @include font(42px, 700, calc(49 / 42), 00.05em, var(--about-color));
+}

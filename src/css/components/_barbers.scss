@@ -1,0 +1,45 @@
+.section-barbers {
+    padding-bottom: 130px;
+    outline: 1px solid black;
+}
+
+.section-barbers__about-p {
+    color: var(--about-color);
+}
+
+.section-barbers__h2 {}
+
+.section-barbers__list {
+    display: flex;
+    gap: 30px;
+}
+
+.section-barbers__list-item {}
+
+.section-barbers__item-link {}
+
+.section-barbers__link-div {}
+
+.section-barbers__div-img {}
+
+.section-barbers__div-h3 {
+    @include font(18px, 400, calc(25 / 18), 0.02em, var(--about-color));
+    text-align: center;
+}
+
+.section-barbers__div-p {
+    @include font(14px, 400, calc(19 / 14), 0.02em, var(--barber-color));
+    text-align: center;
+}
+
+.section-barbers__div-div2 {}
+
+.section-barbers__div2-list2 {}
+
+.section-barbers__list2-item2 {}
+
+.section-barbers__item2-link2 {}
+
+.section-barbers__link2-svg {}
+
+.section-barbers__svg-use {}

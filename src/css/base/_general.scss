@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, h1, h2, h3, h4, h5, h6 {
+    list-style: none;
+}
+h2 {
+    font-family: 'Raleway';
+    @include font(42px, 700, calc(49 / 42), 00.05em, var(--about-color));
+}
+img {
+    display: block;
+
+}
+a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans';
+    background-color: white;
+
+    letter-spacing: 0.03em;
+
+}

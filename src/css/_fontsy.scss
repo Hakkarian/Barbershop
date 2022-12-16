@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../assets/fonts/OpenSans-Medium.eot');
+	src: local('☺'), url('../assets/fonts/OpenSans-Medium.woff') format('woff'), 
+	url('../assets/fonts/OpenSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('../assets/fonts/Raleway-Bold.eot');
+	src: local('☺'), url('../assets/fonts/Raleway-Bold.woff') format('woff'), url('../assets/fonts/Raleway-Bold.ttf') format('truetype'), url('../assets/fonts/Raleway-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
