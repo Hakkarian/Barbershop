@@ -1,0 +1,11 @@
+.btn {
+    display: inline-block;
+    color: $white;
+    background-color: transparent;
+    font-family: inherit;
+    @include fonts(12px, 600, 16px, 0.09em);
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $orange;
+    border-radius: 25px;
+}
