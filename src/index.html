@@ -9,10 +9,12 @@
 <body>
     <header class="barber-header">
         <div class="container">
-        <nav class="barber-header__nav">
         <a class="barber-header__nav-link" href="/">
-        <img class="barber-header__link-img" src="./images/logo.svg" alt="logo">
+        <svg class="barber-header__link-svg" width="58" height="65">
+            <use class="barber-header__svg-use" href="./images/icons.svg#logo"></use>
+        </svg>
         </a>
+        <nav class="barber-header__nav">
         <ul class="barber-header__nav-list">
             <li class="barber-header__list-item"><a class="header-nav__item-link" href="/">About</a></li>
             <li class="barber-header__list-item"><a class="header-nav__item-link" href="/">Services and prices</a></li>
@@ -37,7 +39,7 @@
                 <div class="section-hero__div-wrap">
             <p class="section-hero__div-about">A hair salon for men in Kyiv</p>
             <h1 class="section-hero__div-h1">BarberShop</h1>
-            <p class="section-hero__div-p">We are experts in trendy men’s haircuts. <br />
+            <p class="section-hero__div-p">We are experts in trendy men’s haircuts.
             We work quickly, carefully and with style.</p>
                 </div>
             </div>
@@ -48,8 +50,7 @@
             <ul class="section-about__list">
                 <li class="section-about__list-item"><img class="section-about__item-img" src="./images/about1-1.jpg" alt="shaving" width="270"></li>
                 <li class="section-about__list-item"><img class="section-about__item-img" src="./images/about2-1.jpg" alt="cutting the hair" width="270"></li>
-            </ul>
-            <div class="section-about__wrap">
+                <li><div class="section-about__wrap">
             <p class="section-about__about-p pretitle">About</p>
             <h2 class="section-about__h2">Best Barbershop in your city</h2>
             <p class="section-about__p">If you want to add more confidence to your image, you should definitely visit us.</p>
@@ -57,7 +58,8 @@
             and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a
             team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
             <button class="booking-button" type="button">ONLINE-BOOKING</button>
-            </div>
+            </div></li>
+            </ul>
             </div>
         </section>
         <section class="section-pricing">
@@ -133,9 +135,11 @@
                     </div>
                 </li>
             </ul>
+            <div class="section-reason__wrap">
             <p class="section-reason__about-p pretitle">old traditional school</p>
             <h2 class="section-reason__h2">Why people come to us?</h2>
-            <p class="section-reason__p2">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+            <p class="section-reason__p2">Only good things are said about us. <br />But it's better to see and feel 1 time than read 10 times. </p>
+            </div>
             </div>
         </section>
         <section class="section-barbers">
@@ -149,38 +153,36 @@
                             <img class="section-barbers__div-img" src="./images/barbers1-1.jpg" alt="" width="370">
                             <h3 class="section-barbers__div-h3">John Smith</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
-                            <div class="section-barbers__div-div2">
                                 <ul class="section-barbers__div2-list2">
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#insta"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#twit"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#fbook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
                         </div>
                     </a>
                 </li>
@@ -190,38 +192,36 @@
                             <img class="section-barbers__div-img" src="./images/barbers2-1.jpg" alt="" width="370">
                             <h3 class="section-barbers__div-h3">Michele Doe</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
-                            <div class="section-barbers__div-div2">
-                                <ul class="section-barbers__div2-list2">
+                             <ul class="section-barbers__div2-list2">
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#insta"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#twit"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#fbook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
                         </div>
                     </a>
                 </li>
@@ -231,38 +231,36 @@
                             <img class="section-barbers__div-img" src="./images/barbers3-1.jpg" alt="" width="370">
                             <h3 class="section-barbers__div-h3">Alan Black</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
-                            <div class="section-barbers__div-div2">
-                                <ul class="section-barbers__div2-list2">
+                             <ul class="section-barbers__div2-list2">
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#insta"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#twit"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#fbook"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="section-barbers__list2-item2">
                                         <a class="section-barbers__item2-link2" href="/">
-                                            <svg class="section-barbers__link2-svg">
-                                                <use class="section-barbers__svg-use"></use>
+                                            <svg class="section-barbers__link2-svg" width="20" height="20">
+                                                <use class="section-barbers__svg-use" href="./images/icons.svg#linkedin"></use>
                                             </svg>
                                         </a>
                                     </li>
                                 </ul>
-                            </div>
                         </div>
                     </a>
                 </li>
@@ -274,11 +272,11 @@
             <p class="section-gallery__about-p pretitle">in Latin, "barba" means "beard"</p>
             <h2 class="visually-hidden">Gallery</h2>
             <ul class="section-gallery__list">
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/mobgallery1-1x.jpg" alt=""></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/mobgallery2-1x.jpg" alt=""></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/mobgallery3-1x.jpg" alt=""></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/mobgallery4-1x.jpg" alt=""></li>
-            </ul> -->
+                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery1-1.jpg" alt="extreme haircut" width="270"></li>
+                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery2-1.jpg" alt="" width="270"></li>
+                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery3-1.jpg" alt="" width="270"></li>
+                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery4-1.jpg" alt="" width="270"></li>
+            </ul>
             </div>
             <div class="container">
         <section class="section-booking">

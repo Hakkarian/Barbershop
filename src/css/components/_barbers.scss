@@ -1,20 +1,30 @@
 .section-barbers {
+    padding-top: 120px;
     padding-bottom: 130px;
-    outline: 1px solid black;
+
+    background-color: var(--light-gray);
+
+
 }
 
 .section-barbers__about-p {
     color: var(--about-color);
+    margin-bottom: 20px;
 }
 
-.section-barbers__h2 {}
+.section-barbers__h2 {
+    margin-bottom: 44px;
+}
 
 .section-barbers__list {
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 }
 
-.section-barbers__list-item {}
+.section-barbers__list-item {
+    height: 503px;
+    
+}
 
 .section-barbers__item-link {}
 
@@ -23,6 +33,8 @@
 .section-barbers__div-img {}
 
 .section-barbers__div-h3 {
+    margin-top: 30px;
+    margin-bottom: 8px;
     @include font(18px, 400, calc(25 / 18), 0.02em, var(--about-color));
     text-align: center;
 }
@@ -30,16 +42,45 @@
 .section-barbers__div-p {
     @include font(14px, 400, calc(19 / 14), 0.02em, var(--barber-color));
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .section-barbers__div-div2 {}
 
-.section-barbers__div2-list2 {}
+.section-barbers__div2-list2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
-.section-barbers__list2-item2 {}
+.section-barbers__list2-item2 {
 
-.section-barbers__item2-link2 {}
+}
 
-.section-barbers__link2-svg {}
+.section-barbers__item2-link2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    background-color: white;
+
+    color: var(--about-color);
+
+    border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover, &:focus {
+        color: var(--barber-color);
+    }
+    
+}
+
+.section-barbers__link2-svg {
+    fill: currentColor;
+}
 
 .section-barbers__svg-use {}

@@ -9,11 +9,10 @@ outline: 1px solid black;
     display: flex;
     align-items: flex-end;
 
-
     width: 90px;
 
-
     background-color: white;
+    outline: 1px solid black;
 
     transform-origin: rotate(90deg);
 
@@ -23,13 +22,16 @@ outline: 1px solid black;
 .section-hero__list-item {
     
     &:first-child {
-        margin-right: 30px
+        margin-right: 30px;
+        margin-left: 15px;
     }
 
 }
 
 .section-hero__item-link {
     @include font(12px, 600, calc(11 / 15), 0.09em, #303030);
+
+    transform-origin: top;
 
     transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -41,9 +43,14 @@ outline: 1px solid black;
 .section-hero__div {
     display: flex;
     flex-grow: 1;
-    padding: 272px 100px 206px;
-
-    background-color: lightgray;
+    padding-top: 272px;
+    padding-bottom: 208px;
+    padding-left: 100px;
+    background-color: #303030;
+    background-image: linear-gradient(40deg, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('/src/images/hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .section-hero__div {
     display: flex;
@@ -62,4 +69,5 @@ outline: 1px solid black;
 
 .section-hero__div-p {
     @include font(18px, 400, calc(30 / 18), 0.02em, #9DA4BD);
+    max-width: 370px;
 }

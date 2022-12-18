@@ -1,11 +1,24 @@
-.section-gallery {}
+.section-gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
-.section-gallery__about-p {}
+.section-gallery__about-p {
+    margin-bottom: 44px;
 
-.section-gallery__h2 {}
+    color: var(--about-color);
+}
 
-.section-gallery__list {}
+.section-gallery__h2 {
 
-.section-gallery__list-item {}
+}
+
+.section-gallery__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-gallery__list-item {
+}
 
 .section-gallery__item-img {}

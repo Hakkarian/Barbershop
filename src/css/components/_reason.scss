@@ -1,13 +1,25 @@
 .section-reason {
     padding-bottom: 130px;
     outline: 1px solid black;
+
+    > .container {
+        display: flex;
+        align-items: center;
+    }
 }
 
-.section-reason__list {}
+.section-reason__list {
+
+}
 
 .section-reason__list-item {}
 
-.section-reason__item-div {}
+.section-reason__item-div {
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    background-color: var(--light-gray);
+}
 
 .section-reason__div-span {
     @include font(42px, 700, calc(57 / 42), 0.05em, var(--about-color));
@@ -22,6 +34,9 @@
 
 }
 
+.section-reason__wrap {
+    margin-left: auto;
+}
 .section-reason__about-p {
 
 }

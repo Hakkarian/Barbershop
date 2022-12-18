@@ -1,5 +1,8 @@
 .section-pricing {
-    background-color: rgb(40, 40, 40);
+    background-image: url('/src/images/pricing.png'), linear-gradient(60deg, #212121, var(--about-color));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 130px;
     padding-bottom: 130px;
     outline: 1px solid black;
@@ -22,6 +25,7 @@
 .section-pricing__div {
     display: flex;
     margin-bottom: 50px;
+    gap: 30px;
 
 }
 

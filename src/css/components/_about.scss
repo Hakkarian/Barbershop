@@ -36,4 +36,5 @@
 .section-about__text {
     @include font(14px, 400, calc(26 / 14), 0.02em, var(--p-color));
     margin-bottom: 40px;
+    max-width: 500px;
 }

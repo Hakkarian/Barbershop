@@ -1,5 +1,9 @@
 .barber-header {
-    background-color: gray;
+    // position: absolute;
+    // top: -50%;
+    // left: 0;
+    // transform: translate(-50%, -50%);
+    background-color: var(--about-color);
 
 
     > .container {
@@ -12,7 +16,8 @@
 .barber-header__nav {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 30px;
+    margin-left: 130px;
 }
 .barber-header__connect {
     display: flex;
@@ -22,6 +27,9 @@
 }
 
 .barber-header__nav-link {
+    // display: inline-block;
+    // padding: 20px;
+    margin-left: 15px;
 }
 
 .barber-header__link-img {}
@@ -29,12 +37,18 @@
 .barber-header__nav-list {
     display: flex;
     gap: 30px;
+    margin-left: 10px;
 
 }
 
-.barber-header__list-item {}
+.barber-header__list-item {
+}
 
 .header-nav__item-link {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
     @include font(12px, 600, 1.33, 0.1em, #fff);
 
     transition: color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
