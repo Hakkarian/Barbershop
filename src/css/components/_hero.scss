@@ -58,8 +58,11 @@ outline: 1px solid black;
 }
 
 .section-hero__div-about {
-    @include font(12px, 600, 1.33, 0.1em, rgba(157, 164, 189, 0.6));
-    margin-bottom: 20px
+    margin-bottom: 20px;
+
+    &.pretitle {
+        color: rgba(157, 164, 189, 0.6);
+    }
 }
 
 .section-hero__div-h1 {

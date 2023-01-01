@@ -1,4 +1,7 @@
 .section-pricing {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #303030;
     background-image: url('/src/images/pricing.png'), linear-gradient(60deg, #212121, var(--about-color));
     background-repeat: no-repeat;
     background-position: center;
@@ -7,14 +10,20 @@
     padding-bottom: 130px;
     outline: 1px solid black;
 
+
 }
 .centered {
-    margin-left: 43.5%
+    margin-left: 43.5%;
+    color: white;
     
 }
 
 .section-pricing__about-p {
     margin-bottom: 20px;
+
+        &.pretitle {
+        color: rgba(157, 164, 189, 0.6);
+    }
 }
 
 .section-pricing__h2 {
@@ -30,9 +39,13 @@
 }
 
 .section-pricing__div-list {
-    width: 50%;
+    width: calc(50% - 15px);
     padding: 30px 40px;
-    border: 1px solid lightgray;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);;
+    
+    &:nth-child(2) {
+        background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
 }
 
 .section-pricing__list-item {
@@ -51,6 +64,19 @@
 }
 
 .section-pricing__item-p2 {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
     @include font(18px, 400, calc(30 / 18), 0.02em, var(--pricing-color));
+    
+
+    &::before {
+        content: '';
+        height: 1px;
+        width: 1px;
+        flex-grow: 1;
+        background-color: rgba(157, 164, 189, 0.12);
+        margin: 0 12px;
+    }
 }
 

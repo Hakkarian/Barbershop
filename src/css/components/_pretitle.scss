@@ -1,6 +1,16 @@
 .pretitle {
-    @include font(11px, 600, calc(15 / 11), 0.1em, var(--pricing-color));
+    @include font(11px, 600, calc(15 / 11), 0.1em, var(--about-color));
+    display: flex;
     text-transform: uppercase;
+    align-items: center;
+        margin-bottom: 20px;
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+        background-color: currentColor;
+        margin-right: 20px;
+    }
 }
 .title {
     @include font(42px, 700, calc(49 / 42), 00.05em, var(--about-color));
