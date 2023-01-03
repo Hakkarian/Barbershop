@@ -13,12 +13,13 @@
 
 }
 .centered {
-    margin-left: 43.5%;
-    color: white;
+    display: block;
+    margin: 0 auto;
     
 }
 
 .section-pricing__about-p {
+    text-transform: uppercase;
     margin-bottom: 20px;
 
         &.pretitle {

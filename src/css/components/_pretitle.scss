@@ -1,9 +1,10 @@
 .pretitle {
     @include font(11px, 600, calc(15 / 11), 0.1em, var(--about-color));
     display: flex;
-    text-transform: uppercase;
+
     align-items: center;
-        margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
     &::before {
         content: '';
         width: 60px;

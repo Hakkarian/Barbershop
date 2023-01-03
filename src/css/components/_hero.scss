@@ -1,34 +1,40 @@
 .section-hero {
-outline: 1px solid black;
     > .container {
         display: flex;
     }
 }
+.section-hero__wraplist {
+    width: 100px;
+
+    display: flex;
+    align-items: flex-end;
+}
 
 .section-hero__list {
     display: flex;
-    align-items: flex-end;
-
-    width: 90px;
-
-    background-color: white;
-    outline: 1px solid black;
-
-    transform-origin: rotate(90deg);
+    align-items: center;
+    gap: 40px;
+    padding-top: 27px;
+    margin-bottom: 40px;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: bottom left;
 
 
-}
+    transform-origin: bottom left;
 
-.section-hero__list-item {
-    
-    &:first-child {
-        margin-right: 30px;
-        margin-left: 15px;
+    &::before {
+        content: '';
+        width: 70px;
+        height: 1px;
+        background-color: #303030;
     }
 
 }
 
 .section-hero__item-link {
+    display: flex;
+    align-items: center;
+
     @include font(12px, 600, calc(11 / 15), 0.09em, #303030);
 
     transform-origin: top;
@@ -58,6 +64,7 @@ outline: 1px solid black;
 }
 
 .section-hero__div-about {
+    text-transform: uppercase;
     margin-bottom: 20px;
 
     &.pretitle {

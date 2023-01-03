@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbershop</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <script defer src="index.js"></script><link href="index.css" rel="stylesheet"></head>
 <body>
     <header class="barber-header">
@@ -31,14 +35,16 @@
     <main class="barber-main">
         <section class="section-hero">
             <div class="container">
+                <div class="section-hero__wraplist">
             <ul class="section-hero__list">
                 <li class="section-hero__list-item"><a class="section-hero__item-link" href="/" target="_blank" rel="noopener noreferrer nofollow">Instagram</a></li>
                 <li class="section-hero__list-item"><a class="section-hero__item-link" href="/" target="_blank" rel="noopener noreferrer nofollow">Youtube</a></li>
             </ul>
+                </div>
             <div class="section-hero__div">
                 <div class="section-hero__div-wrap">
-            <p class="section-hero__div-about">A hair salon for men in Kyiv</p>
-            <h1 class="section-hero__div-h1">BarberShop</h1>
+            <p class="section-hero__div-about pretitle light">A hair salon for men in Kyiv</p>
+            <h1 class="section-hero__div-h1 animate__animated animate__tada">BarberShop</h1>
             <p class="section-hero__div-p">We are experts in trendy men’s haircuts.
             We work quickly, carefully and with style.</p>
                 </div>
@@ -85,7 +91,7 @@
                     <p class="section-pricing__item-p2">from 200 uah.</p>
                 </li>
             </ul>
-            <ul class="section-pricing__div-list">
+            <ul class="section-pricing__div-list gradient">
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Trainee’s haircut</p>
                     <p class="section-pricing__item-p2">from 50 uah.</p>
@@ -150,7 +156,12 @@
                 <li class="section-barbers__list-item">
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
+                            <div class="section-barbers__img-wrap">
                             <img class="section-barbers__div-img" src="src/images/barbers1-1.jpg" alt="" width="370">
+                            <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
+                                assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
+                            </div>
                             <h3 class="section-barbers__div-h3">John Smith</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
                                 <ul class="section-barbers__div2-list2">
@@ -189,7 +200,12 @@
                 <li class="section-barbers__list-item">
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
+                            <div class="section-barbers__img-wrap">
                             <img class="section-barbers__div-img" src="src/images/barbers2-1.jpg" alt="" width="370">
+                            <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
+                                assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
+                            </div>
                             <h3 class="section-barbers__div-h3">Michele Doe</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
                              <ul class="section-barbers__div2-list2">
@@ -228,7 +244,12 @@
                 <li class="section-barbers__list-item">
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
+                            <div class="section-barbers__img-wrap">
                             <img class="section-barbers__div-img" src="src/images/barbers3-1.jpg" alt="" width="370">
+                            <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
+                                assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
+                            </div>
                             <h3 class="section-barbers__div-h3">Alan Black</h3>
                             <p class="section-barbers__div-p">Extreme barber</p>
                              <ul class="section-barbers__div2-list2">
@@ -278,29 +299,42 @@
                 <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="src/images/gallery4-1.jpg" alt="" width="270"></li>
             </ul>
             </div>
-            <div class="container">
-        <section class="section-booking">
-            <h2 class="section-booking__h2">Online-booking</h2>
-        </section>
-        <section class="section-contacts">
-            <h2 class="section-contacts__h2">Contacts</h2>
-            <address class="section-contacts__address">
-                <ul class="section-contacts__address-list">
-                    <li class="section-contacts__list-item">
-                        <a class="section-contacts__item-link" href="" target="_blank" rel="noreferrer nofollow noopener"></a>
-                    </li>
-                    <li class="section-contacts__list-item">
-                        <a class="section-contacts__item-link" href="tel:+380441111111">+38 044 111 11 11</a>
-                    </li>
-                    <li class="section-contacts__list-item">
-                        <a class="section-contacts__item-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
-                    </li>
-                </ul>
-            </address>
-            <p class="section-contacts__about-p pretitle">working hours</p>
-            <p class="section-contacts__p"></p>
-        </section>
+            </section>
+            <section class="double-section">
+        <div class="container">
+            <section class="section-booking">
+                <h2 class="section-booking__h2">Online-booking</h2>
+                <form class="section-booking__form">
+                    <input type="text" class="section-booking__input" name="online-name" placeholder="Name*">
+                    <input type="tel" class="section-booking__input" 
+                    name="online-password" placeholder="Phone*">
+
+                    <textarea class="section-booking__input message" placeholder="Message">
+
+                    </textarea>
+                    <button type="submit" class="booking-button form-button">Send</button>
+                </form>
+            </section>
+            <section class="section-contacts">
+                <h2 class="section-contacts__h2">Contacts</h2>
+                <address class="section-contacts__address">
+                    <ul class="section-contacts__address-list">
+                        <li class="section-contacts__list-item">
+                            <a class="section-contacts__item-link" href="" target="_blank" rel="noreferrer nofollow noopener"></a>
+                        </li>
+                        <li class="section-contacts__list-item">
+                            <a class="section-contacts__item-link" href="tel:+380441111111">+38 044 111 11 11</a>
+                        </li>
+                        <li class="section-contacts__list-item">
+                            <a class="section-contacts__item-link" href="mailto:barbershop@email.com">barbershop@email.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <p class="section-contacts__about-p pretitle">working hours</p>
+                <p class="section-contacts__p"></p>
+            </section>
         </div>
+            </section>
     </main>
     <footer class="barber-footer">
         <div class="container">
@@ -311,5 +345,32 @@
         </ul>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-close">
+                <svg class="modal__icon" width="19" height="19">
+                    <use href="src/fonts/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="modal__wrap">
+            <nav class="modal__nav">
+        <ul class="modal__nav-list">
+            <li class="modal__list-item"><a class="modal__item-link" href="/">About</a></li>
+            <li class="modal__list-item"><a class="modal__item-link" href="/">Services and prices</a></li>
+            <li class="modal__list-item"><a class="modal__item-link" href="/">Barbers</a></li>
+            <li class="modal__list-item"><a class="modal__item-link" href="/">Contacts</a></li>
+        </ul>
+        </nav>
+        <div class="modal__connect">
+        <a class="modal__tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="booking-button" type="button">Online-booking</button>
+        </div>
+        <ul class="modal__list-soc">
+            <li class="modal__item-soc"><a class="modal__link-soc" href="">Instagram</a></li>
+            <li class="modal__item-soc"><a class="modal__link-soc" href="">Youtube</a></li>
+        </ul>
+        </div>
+        </div>
+    </div>
 </body>
 </html>

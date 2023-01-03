@@ -1,3 +1,63 @@
-.section-booking {}
+.double-section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: var(--book-color);
+    background-image: url(/src/images/contacts.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px);
+    > .container {
+        display: flex;
+        gap: 30px;
+    }
+}
 
-.section-booking__h2 {}
+.section-booking {
+    background-color: var(--book-color);
+    width: calc(50% - 15px);
+}
+.section-booking__h2 {
+    color: #ffffff;
+    margin-bottom: 44px;
+}
+.section-booking__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-booking__input-wrap {
+}
+.section-booking__input {
+    width: 270px;
+    height: 24px;
+
+    @include font(11px, 600, calc(15 / 11), 0.1em, var(--about-color));
+
+    background-color: transparent;
+    border: none;
+    color: rgba(157, 164, 189, 0.4);
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);;
+    transition: border-bottom 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+    color 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &::placeholder {
+        text-transform: uppercase;
+        @include font(11px, 600, calc(15 / 11), 0.1em, currentColor);
+        margin-bottom: 8px;
+    }
+
+
+
+    &:hover, &:focus {
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+}
+
+.message {
+    width: 100%;
+    height: 76px;
+    resize: none;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}

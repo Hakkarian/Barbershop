@@ -7,51 +7,51 @@ const modeProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   performance: {
-    hints: modeProd ? "warning" : false,
+    hints: modeProd ? 'warning' : false,
   },
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: "index.js",
+    filename: 'index.js',
   },
   module: {
     rules: [
       {
         test: /\.html$/i,
-        use: ["html-loader"],
+        use: ['html-loader'],
       },
       {
         test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: ['babel-loader'],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "src/images/[name][ext]",
+          filename: 'src/images/[name][ext]',
         },
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "src/fonts/[name][ext]",
+          filename: 'src/fonts/[name][ext]',
         },
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      template: 'src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "index.css",
+      filename: 'index.css',
     }),
   ],
   devServer: {

@@ -1,15 +1,26 @@
 .section-reason {
+    padding-top: 130px;
     padding-bottom: 130px;
-    outline: 1px solid black;
+
 
     > .container {
         display: flex;
-        align-items: center;
+        align-items: baseline;
+        justify-content: space-around;
     }
 }
 
+.section-reason__block-wrap {
+    display: flex; 
+    gap: 30px;
+}
 .section-reason__list {
-
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.two {
+    margin-top: 30px;
 }
 
 .section-reason__list-item {}
@@ -18,6 +29,7 @@
     width: 170px;
     height: 133px;
     padding: 20px 24px;
+    text-align: center;
     background-color: var(--light-gray);
 }
 
@@ -35,10 +47,11 @@
 }
 
 .section-reason__wrap {
-    margin-left: auto;
+
 }
 .section-reason__about-p {
-
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .section-reason__h2 {
