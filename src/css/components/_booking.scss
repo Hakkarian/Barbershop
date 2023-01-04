@@ -6,6 +6,12 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(50% - 15px);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('/src/images/contacts-2x.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: calc(50% - 15px);
+            }
     > .container {
         display: flex;
         gap: 30px;
@@ -38,21 +44,31 @@
         }
     }
 
-    @media screen and (max-width: 1199px) {
+            @media screen and (max-width: 479px) {
+                width: 100%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         width: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
-    }
-    .booking-button {
-        @media screen and (max-width: 1199px) {
+
+        .booking-button {
             margin: 0;
         }
     }
+
 
 }
 .section-booking__h2 {
     color: #ffffff;
     margin-bottom: 44px;
+
+    @media screen and (max-width: 480px) {
+        @include font(33px, 700, calc(42 / 33), 00.05em, #ffffff); 
+    }
 }
 .section-booking__form {
     display: flex;

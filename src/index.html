@@ -59,7 +59,17 @@
         <section class="section-about">
             <div class="container">
             <ul class="section-about__list">
-                <li class="section-about__list-item"><img class="section-about__item-img" src="./images/about1-1.jpg" alt="shaving" width="270"></li>
+                <li class="section-about__list-item">
+                    <picture>
+                        <source srcset="./images/about1-1.jpg 1x,
+                            ./images/about1-2.jpg 2x" media="(min-width: 1200px)" >
+                        <source srcset="./images/tababout1-1.jpg 1x,
+                            ./images/tababout1-2.jpg 2x," media="(max-width: 1199px)" >
+                            
+                            <img class="section-about__item-img" 
+                    src="./images/about1-1.jpg" alt="shaving">
+                    </picture>
+                </li>
                 <li class="section-about__list-item"><img class="section-about__item-img" src="./images/about2-1.jpg" alt="cutting the hair" width="270"></li>
                 <li><div class="section-about__wrap">
             <p class="section-about__about-p pretitle">About</p>

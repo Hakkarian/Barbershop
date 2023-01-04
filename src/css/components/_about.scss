@@ -7,16 +7,31 @@
         align-items: center;
         gap: 64px;
     }
+
+        @media screen and (max-width: 479px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .section-about__list {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
 }
 .section-about__wrap {
 
 }
-.section-about__list-item {}
+.section-about__list-item {
+        @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
 
 .section-about__item-img {}
 

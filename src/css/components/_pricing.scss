@@ -9,15 +9,41 @@
     padding-top: 130px;
     padding-bottom: 130px;
 
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/src/images/pricing-2x.png'), linear-gradient(60deg, #212121, var(--about-color));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
     .booking-button {
         color: #ffffff;
     }
 
-    @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 479px) {
+        background-image: url('/src/images/mobpricing1x.png'), linear-gradient(60deg, #212121, var(--about-color));
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/src/images/mobpricing2x.png'), linear-gradient(60deg, #212121, var(--about-color));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         background-image: url('/src/images/tabpricing.png'), linear-gradient(60deg, #212121, var(--about-color));
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('/src/images/tabpricing-2x.png'), linear-gradient(60deg, #212121, var(--about-color));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
     }
 
 }

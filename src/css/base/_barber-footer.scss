@@ -5,8 +5,12 @@
         display: flex;
         justify-content: space-between;
     }
+    @media screen and (max-width: 479px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         padding-top: 44px;
         padding-bottom: 79px;
     }
@@ -31,6 +35,10 @@
         width: 60px;
         height: 1px;
         background-color: currentColor;
+    }
+    @media screen and (max-width: 479px) {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 

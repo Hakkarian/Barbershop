@@ -10,11 +10,15 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-                @media screen and (max-width: 767px) {
-                    display: flex;
-                    flex-wrap: wrap;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
+            @media screen and (max-width: 479px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
 
 }
 .section-barbers__center {
@@ -97,6 +101,10 @@
     transform: translateY(-100%);
 
     transition: transform 250ms linear;
+
+    @media screen and (max-width: 479px) {
+        transform: translateY(-200%);
+    }
 }
 
 .section-barbers__div-h3 {

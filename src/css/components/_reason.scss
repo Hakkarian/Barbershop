@@ -8,11 +8,16 @@
         align-items: baseline;
         justify-content: space-around;
 
+
         @media screen and (max-width: 1199px) {
             display: flex;
             flex-direction: column-reverse;
         }
     }
+    @media screen and (max-width: 479px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
 }
 
 .section-reason__block-wrap {
@@ -48,7 +53,11 @@
     text-align: center;
     background-color: var(--light-gray);
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 193px;
     }
 }

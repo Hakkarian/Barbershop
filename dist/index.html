@@ -14,8 +14,8 @@
     <header class="barber-header">
         <div class="container">
         <a class="barber-header__nav-link" href="/">
-        <svg class="barber-header__link-svg" width="58" height="65">
-            <use class="barber-header__svg-use" href="src/fonts/icons.svg#logo"></use>
+        <svg class="barber-header__logo" width="58" height="65">
+            <use href="src/fonts/icons.svg#logo"></use>
         </svg>
         </a>
         <nav class="barber-header__nav">
@@ -24,17 +24,17 @@
             <li class="barber-header__list-item"><a class="header-nav__item-link" href="/">Services and prices</a></li>
             <li class="barber-header__list-item"><a class="header-nav__item-link" href="/">Barbers</a></li>
             <li class="barber-header__list-item"><a class="header-nav__item-link" href="/">Contacts</a></li>
-            <li><button class="modal-open">
-                <svg class="modal-open__icon" width="40" height="40">
-                    <use href="src/fonts/icons.svg#menu"></use>
-                </svg>
-            </button></li>
         </ul>
         </nav>
         <div class="barber-header__connect">
         <a class="barber-header__tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
         <button class="booking-button light" type="button">Online-booking</button>
         </div>
+        <button class="modal-open">
+                <svg class="modal-open__icon" width="40" height="40">
+                    <use href="src/fonts/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main class="barber-main">
@@ -59,7 +59,17 @@
         <section class="section-about">
             <div class="container">
             <ul class="section-about__list">
-                <li class="section-about__list-item"><img class="section-about__item-img" src="src/images/about1-1.jpg" alt="shaving" width="270"></li>
+                <li class="section-about__list-item">
+                    <picture>
+                        <source
+                  ".images/about1-2.jpg" media="(min-width: 1200px)" >
+                        <sourcesrc/images/tababout1-1.jpgut1-1.jpg 1x,
+                  src/images/tababout1-2.jpgout1-2.jpg 2x," media="(max-width: 1199px)" >
+                            
+                            <img class="section-about__item-img" 
+                    src="src/images/about1-1.jpg" alt="shaving">
+                    </picture>
+                </li>
                 <li class="section-about__list-item"><img class="section-about__item-img" src="src/images/about2-1.jpg" alt="cutting the hair" width="270"></li>
                 <li><div class="section-about__wrap">
             <p class="section-about__about-p pretitle">About</p>
@@ -81,71 +91,71 @@
             <ul class="section-pricing__div-list">
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Men’s haircut</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Beard trim</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Mustache trim</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Straight razor shave</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
             </ul>
             <ul class="section-pricing__div-list gradient">
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Trainee’s haircut</p>
-                    <p class="section-pricing__item-p2">from 50 uah.</p>
+                    <p class="section-pricing__item-p">from 50 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Haircut under the nozzle</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Children’s haircut (0-12 y.o.)</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Camouflage of gray hair</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
             </ul>
             <ul class="section-pricing__list-full">
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Men’s haircut</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Beard trim</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Mustache trim</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Straight razor shave</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Trainee’s haircut</p>
-                    <p class="section-pricing__item-p2">from 50 uah.</p>
+                    <p class="section-pricing__item-p">from 50 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Haircut under the nozzle</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Children’s haircut (0-12 y.o.)</p>
-                    <p class="section-pricing__item-p2">from 300 uah.</p>
+                    <p class="section-pricing__item-p">from 300 uah.</p>
                 </li>
                 <li class="section-pricing__list-item">
                     <p class="section-pricing__item-p">Camouflage of gray hair</p>
-                    <p class="section-pricing__item-p2">from 200 uah.</p>
+                    <p class="section-pricing__item-p">from 200 uah.</p>
                 </li>
             </ul>
             </div>
@@ -194,8 +204,10 @@
         </section>
         <section class="section-barbers">
             <div class="container">
+                <div class="section-barbers__center">
             <p class="section-barbers__about-p pretitle">for true enjoyers of the style</p>
             <h2 class="section-barbers__h2 title">Our barbers</h2>
+                </div>
             <ul class="section-barbers__list">
                 <li class="section-barbers__list-item">
                     <a class="section-barbers__item-link" href="/">
@@ -366,7 +378,7 @@
                 <address class="section-contacts__address">
                     <ul class="section-contacts__address-list">
                         <li class="section-contacts__list-item">
-                            <a class="section-contacts__item-link" href="" target="_blank" rel="noreferrer nofollow noopener"><svg class="contacts-icon" width="24" height="24">
+                            <a class="section-contacts__item-link bold" href="" target="_blank" rel="noreferrer nofollow noopener"><svg class="contacts-icon" width="24" height="24">
                                 <use href="src/fonts/icons.svg#map-pin"></use>
                             </svg>
                             st. Vasilkivska, 7A Kyiv, 08132</a>
