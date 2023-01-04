@@ -27,6 +27,10 @@
 
 .section-about__h2 {
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        @include font(28px, 700, calc(33 / 28), 00.05em, var(--about-color));
+    }
 }
 
 .section-about__p {

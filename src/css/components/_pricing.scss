@@ -8,8 +8,17 @@
     background-size: cover;
     padding-top: 130px;
     padding-bottom: 130px;
-    outline: 1px solid black;
 
+    .booking-button {
+        color: #ffffff;
+    }
+
+    @media screen and (max-width: 1199px) {
+        background-image: url('/src/images/tabpricing.png'), linear-gradient(60deg, #212121, var(--about-color));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
 }
 .centered {
@@ -30,11 +39,15 @@
 .section-pricing__h2 {
     color: #ffffff;
     margin-bottom: 44px;
+
+        @media screen and (max-width: 767px) {
+        @include font(40px, 700, calc(47 / 40), 00.05em, #ffffff);
+    }
 }
 
 .section-pricing__div {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     gap: 30px;
 
 }
@@ -42,42 +55,53 @@
 .section-pricing__div-list {
     width: calc(50% - 15px);
     padding: 30px 40px;
-    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
     
     &:nth-child(2) {
         background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
     }
+        @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
+.section-pricing__list-full {
+    display: none;
 
+    width: 100%;
+    padding: 30px 40px;
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+    @media screen and (max-width: 1199px) {
+        display: block;
+    }
+}
 .section-pricing__list-item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
 
     margin-bottom: 20px;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.section-pricing__item-p {
-    @include font(18px, 400, calc(30 / 18), 0.1em, var(--pricing-color));
-}
-
-.section-pricing__item-p2 {
-    display: flex;
-    align-items: baseline;
-    flex-grow: 1;
-    @include font(18px, 400, calc(30 / 18), 0.02em, var(--pricing-color));
-    
-
-    &::before {
+            &::before {
         content: '';
         height: 1px;
         width: 1px;
         flex-grow: 1;
         background-color: rgba(157, 164, 189, 0.12);
         margin: 0 12px;
+    }
+}
+
+.section-pricing__item-p {
+    @include font(18px, 400, calc(30 / 18), 0.1em, var(--pricing-color));
+
+        &:first-child {
+        order: -1;
+    }
+
+    @media screen and (max-width: 767px) {
+        @include font(14px, 400, calc(20 / 14), 0.1em, var(--pricing-color));
     }
 }
 

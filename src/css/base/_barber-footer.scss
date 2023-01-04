@@ -5,10 +5,19 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 44px;
+        padding-bottom: 79px;
+    }
 }
 
 .barber-footer__p {
     @include font(11px, 600, calc(15 / 11), 0.2em, var(--pricing-color));
+
+    @media screen and (max-width: 767px) {
+        margin-top: 35px;
+    }
 }
 
 .barber-footer__list {

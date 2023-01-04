@@ -14,5 +14,5 @@
     }
 }
 .title {
-    @include font(42px, 700, calc(49 / 42), 00.05em, var(--about-color));
+    @include font(42px, 700, calc(49 / 42), 00.05em, var(--about-color)); 
 }
