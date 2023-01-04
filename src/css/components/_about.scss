@@ -14,26 +14,21 @@
     }
 }
 
-.section-about__list {
+.section-about__imgpack {
     display: flex;
     gap: 30px;
 
     @media screen and (max-width: 767px) {
-        display: block;
+        display: none;
     }
-}
-.section-about__wrap {
-
-}
-.section-about__list-item {
-        @media screen and (max-width: 767px) {
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
     }
 }
 
-.section-about__item-img {}
+
+.section-about__item-img {
+}
 
 .section-about__about-p {
     text-transform: uppercase;

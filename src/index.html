@@ -58,20 +58,24 @@
         </section>
         <section class="section-about">
             <div class="container">
-            <ul class="section-about__list">
-                <li class="section-about__list-item">
-                    <picture>
-                        <source srcset="./images/about1-1.jpg 1x,
-                            ./images/about1-2.jpg 2x" media="(min-width: 1200px)" >
-                        <source srcset="./images/tababout1-1.jpg 1x,
-                            ./images/tababout1-2.jpg 2x," media="(max-width: 1199px)" >
-                            
-                            <img class="section-about__item-img" 
-                    src="./images/about1-1.jpg" alt="shaving">
-                    </picture>
-                </li>
-                <li class="section-about__list-item"><img class="section-about__item-img" src="./images/about2-1.jpg" alt="cutting the hair" width="270"></li>
-                <li><div class="section-about__wrap">
+                <div class="section-about__imgpack">
+            <picture class="section-about__item-img">
+                <source srcset="./images/about1-1.jpg 1x, ./images/about1-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tababout1-1.jpg, ./images/tababout1-2.jpg 2x" media="(max-width: 1199px)" />
+                                    
+                    <img class="section-about__item-img" 
+                            src="./images/about1-2.jpg" alt="shaving" width="660">
+            </picture>
+            <picture>
+                <source srcset="./images/about2-1.jpg 1x, ./images/about2-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tababout2-1.jpg, ./images/tababout2-2.jpg 2x" media="(max-width: 1199px)" />
+                                    
+                    <img
+                            src="./images/about2-2.jpg" alt="haircut" width="660">
+            </picture>
+                </div>
+
+                    <div class="section-about__wrap">
             <p class="section-about__about-p pretitle">About</p>
             <h2 class="section-about__h2 title">Best Barbershop in your city</h2>
             <p class="section-about__p">If you want to add more confidence to your image, you should definitely visit us.</p>
@@ -79,8 +83,7 @@
             and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a
             team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
             <button class="booking-button" type="button">ONLINE-BOOKING</button>
-            </div></li>
-            </ul>
+            </div>
             </div>
         </section>
         <section class="section-pricing">
@@ -213,7 +216,12 @@
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
                             <div class="section-barbers__img-wrap">
-                            <img class="section-barbers__div-img" src="./images/barbers1-1.jpg" alt="" width="370">
+                                <picture>
+                <source srcset="./images/barbers1-1.jpg 1x, ./images/barbers1-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabbarbers1-1.jpg 1x, ./images/tabbarbers1-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobbarbers1-1.jpg 1x, ./images/mobbarbers1-2.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/barbers1-2.jpg" alt="barber-1">
+            </picture>
                             <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
                                 assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
@@ -257,7 +265,12 @@
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
                             <div class="section-barbers__img-wrap">
-                            <img class="section-barbers__div-img" src="./images/barbers2-1.jpg" alt="" width="370">
+                            <picture>
+                <source srcset="./images/barbers2-1.jpg 1x, ./images/barbers2-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabbarbers2-1.jpg 1x, ./images/tabbarbers2-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobbarbers2-1.jpg 1x, ./images/mobbarbers2-2.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/barbers2-2.jpg" alt="barber-1">
+            </picture>
                             <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
                                 assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
@@ -301,7 +314,12 @@
                     <a class="section-barbers__item-link" href="/">
                         <div class="section-barbers__link-div">
                             <div class="section-barbers__img-wrap">
-                            <img class="section-barbers__div-img" src="./images/barbers3-1.jpg" alt="" width="370">
+                            <picture>
+                <source srcset="./images/barbers3-1.jpg 1x, ./images/barbers3-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabbarbers3-1.jpg 1x, ./images/tabbarbers3-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobbarbers3-1.jpg 1x, ./images/mobbarbers3-2.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/barbers3-2.jpg" alt="barber-1">
+            </picture>
                             <p class="section-barbers__img-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                                 Velit, unde. Quia nulla, porro possimus sapiente recusandae corporis eligendi 
                                 assumenda tempore nemo id alias quidem, doloremque corrupti vitae maxime suscipit eaque!</p>
@@ -349,10 +367,38 @@
             <p class="section-gallery__about-p pretitle">in Latin, "barba" means "beard"</p>
             <h2 class="section-gallery__h2 visually-hidden">Gallery</h2>
             <ul class="section-gallery__list">
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery1-1.jpg" alt="extreme haircut" width="270"></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery2-1.jpg" alt="" width="270"></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery3-1.jpg" alt="" width="270"></li>
-                <li class="section-gallery__list-item"><img class="section-gallery__item-img" src="./images/gallery4-1.jpg" alt="" width="270"></li>
+                <li class="section-gallery__list-item">
+                    <picture>
+                <source srcset="./images/gallery1-1.jpg 1x, ./images/gallery1-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabgallery1-1.jpg 1x, ./images/tabgallery1-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobgallery1-1x.jpg 1x, ./images/mobgallery1-2x.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/gallery1-2.jpg" alt="gallery-1">
+            </picture>
+        </li>
+                <li class="section-gallery__list-item">
+                    <picture>
+                <source srcset="./images/gallery2-1.jpg 1x, ./images/gallery2-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabgallery2-1.jpg 1x, ./images/tabgallery2-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobgallery2-1x.jpg 1x, ./images/mobgallery2-2x.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/gallery2-2.jpg" alt="gallery-1">
+            </picture>
+        </li>
+                <li class="section-gallery__list-item">
+                    <picture>
+                <source srcset="./images/gallery3-1.jpg 1x, ./images/gallery3-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabgallery3-1.jpg 1x, ./images/tabgallery3-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobgallery3-1x.jpg 1x, ./images/mobgallery3-2x.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/gallery3-2.jpg" alt="gallery-1">
+            </picture>
+        </li>
+                <li class="section-gallery__list-item">
+                    <picture>
+                <source srcset="./images/gallery4-1.jpg 1x, ./images/gallery4-2.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/tabgallery4-1.jpg 1x, ./images/tabgallery4-2.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/mobgallery4-1x.jpg 1x, ./images/mobgallery4-2x.jpg 2x" media="(max-width: 767px)" />               
+                    <img class="section-barbers__div-img" src="./images/gallery4-2.jpg" alt="gallery-1">
+            </picture>
+        </li>
             </ul>
             </div>
             </section>
